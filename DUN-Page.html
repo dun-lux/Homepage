@@ -1,0 +1,474 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About Me</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/DUNsite.css" rel="stylesheet">
+<link href="css/DUN-Page.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wb.affix.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="wwb20.min.js"></script>
+<script>   
+   document.addEventListener('DOMContentLoaded', function(event)
+   {
+      var cookiePopup = document.querySelector('#cookiePopup');
+      var bscookiePopup = new bootstrap.Modal(cookiePopup);
+      cookiePopup.addEventListener('show.bs.modal', function(e)
+      {
+         var dlg = document.querySelector('#cookiePopup .modal-dialog');
+         dlg.classList.remove('animate-hide');
+         dlg.classList.add('animate-show');
+      });
+      cookiePopup.addEventListener('hide.bs.modal', function(e)
+      {
+         var dlg = document.querySelector('#cookiePopup .modal-dialog');
+         dlg.classList.remove('animate-show');
+         var forceReflow = e.target.offsetWidth;
+         dlg.classList.add('animate-hide');
+      });
+   });
+</script>
+<script>   
+   $(document).ready(function()
+   {
+      $('#reviewsImage1').addClass('visibility-hidden');
+      $('#portfolio-image2').addClass('visibility-hidden');
+      $('#reviewsImage1').addClass('visibility-hidden');
+      $('#portfolio-image2').addClass('visibility-hidden');
+      $("a[href*='#header']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutQuad');
+      });
+      $("a[href*='#intro']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_intro').offset().top-68 }, 600, 'easeOutCirc');
+      });
+      $("a[href*='#skills']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_skills').offset().top-68 }, 600, 'easeOutQuad');
+      });
+      $("a[href*='#services']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top-68 }, 600, 'easeOutQuad');
+      });
+      function onScrollservices()
+      {
+         var $obj = $("#wb_services");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+         {
+            $obj.addClass("in-viewport");
+            AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+            AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+         }
+      }
+      onScrollservices();
+      $(window).scroll(function(event)
+      {
+         onScrollservices();
+      });
+      $("a[href*='#servicesLayoutGrid1']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_servicesLayoutGrid1').offset().top-68 }, 600, 'easeOutCirc');
+      });
+      $("a[href*='#servicesLayoutGrid2']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_servicesLayoutGrid2').offset().top-88 }, 600, 'easeOutCirc');
+      });
+      $("a[href*='#portfolio']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_portfolio').offset().top-68 }, 600, 'easeOutQuad');
+      });
+      function onScrollportfolio()
+      {
+         var $obj = $("#wb_portfolio");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+         {
+            $obj.addClass("in-viewport");
+            AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+            AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+         }
+      }
+      onScrollportfolio();
+      $(window).scroll(function(event)
+      {
+         onScrollportfolio();
+      });
+      function skrollrInit()
+      {
+         skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+      }
+      skrollrInit();
+      $("a[href*='#contact']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top-68 }, 600, 'easeOutQuad');
+      });
+      $("a[href*='#contactForm']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_contactForm').offset().top-88 }, 600, 'easeOutCirc');
+      });
+   });
+</script>
+<script>   
+   $(document).ready(function () 
+   {
+       if (document.cookie.indexOf("cookienotice=true")<0) 
+       {
+           $("#cookiePopup").modal("show");
+       }
+       $("#cookieCheckBox").change(function () 
+       {
+          document.cookie = "cookienotice=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";    
+          $("#cookiePopup").modal("hide");
+       });
+      
+   });
+</script>
+</head>
+<body>
+   <div id="wb_header">
+      <div id="header">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:0;">
+                  <img src="images/Logo DUN 3.png" id="Image1" alt="" width="293" height="100">
+               </div>
+            </div>
+            <div class="col-2">
+               <div id="wb_aboutMeMenu" style="display:block;width:100%;z-index:1;" data-wb-spy="affix">
+                  <ul id="aboutMeMenu" role="menubar" class="nav">
+                     <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="#intro" target="_self">accueil</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link" href="#skills" target="_self">à&nbsp;propos&nbsp;de&nbsp;nous</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link" href="#services" target="_self">services</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link" href="#contact" target="_self">contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_intro">
+      <div id="intro-divider-top">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 138" preserveAspectRatio="none">
+            <polygon class="divider-fill" style="opacity:0.2" points="0,136.28 0,36.28 1000,36.28 1000,136.28 500,46.28"/>
+            <polygon class="divider-fill" style="opacity:0.4" points="0,104.43 0,36.28 1000,36.28 1000,104.43 500,44.43"/>
+            <polygon class="divider-fill" style="opacity:0.6" points="0,72.57 0,36.28 1000,36.28 1000,72.57 500,42.57"/>
+            <rect class="divider-fill" width="1000" height="36.290001" x="0" y="0"/>
+         </svg></div>
+      <div id="intro-divider-bottom">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 138" preserveAspectRatio="none">
+            <polygon class="divider-fill" style="opacity:0.2" points="0,136.28 0,36.28 1000,36.28 1000,136.28 500,46.28"/>
+            <polygon class="divider-fill" style="opacity:0.4" points="0,104.43 0,36.28 1000,36.28 1000,104.43 500,44.43"/>
+            <polygon class="divider-fill" style="opacity:0.6" points="0,72.57 0,36.28 1000,36.28 1000,72.57 500,42.57"/>
+            <rect class="divider-fill" width="1000" height="36.290001" x="0" y="0"/>
+         </svg></div>
+      <div id="intro">
+         <div class="col-1">
+            <div id="wb_homeText">
+               <p style="font-weight:bold;">Votre partenaire de confiance pour la mise à disposition</p>
+               <p style="font-weight:bold;"> de main-d'œuvre qualifiée au Luxembourg.</p>
+               <p style="font-size:13px;line-height:16px;">&nbsp;</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_skills">
+      <div id="skills-divider-top">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 355" preserveAspectRatio="none">
+            <path fill="none" d="M999.45 0H0v165.72l379.95 132.46L999.45 0z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M379.95 298.18l28.47 9.92L1000 118.75V0h-.55l-619.5 298.18zM492.04 337.25L1000 252.63V118.75L408.42 308.1l83.62 29.15z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M492.04 337.25L1000 252.63V118.75L408.42 308.1l83.62 29.15z"/>
+            <path class="divider-fill" d="M530.01 350.49l20.22 4.51H1000V252.63l-507.96 84.62 37.97 13.24z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l20.22 4.51H1000V252.63l-507.96 84.62 37.97 13.24z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l20.22 4.51H1000V252.63l-507.96 84.62 37.97 13.24z"/>
+            <path class="divider-fill" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M379.95 298.18L0 165.72v66.59l353.18 78.75 26.77-12.88z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M353.18 311.06L0 232.31v71.86l288.42 38.06 64.76-31.17z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M353.18 311.06L0 232.31v71.86l288.42 38.06 64.76-31.17z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M380.28 317.11l28.14-9.01-28.47-9.92-26.77 12.88 27.1 6.05z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M380.28 317.11l28.14-9.01-28.47-9.92-26.77 12.88 27.1 6.05z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M479.79 339.29l12.25-2.04-83.62-29.15-28.14 9.01 99.51 22.18z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M479.79 339.29l12.25-2.04-83.62-29.15-28.14 9.01 99.51 22.18z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M479.79 339.29l12.25-2.04-83.62-29.15-28.14 9.01 99.51 22.18z"/>
+            <path class="divider-fill" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2zM288.42 342.23l9.46 1.25 82.4-26.37-27.1-6.05-64.76 31.17z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M288.42 342.23l9.46 1.25 82.4-26.37-27.1-6.05-64.76 31.17z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M288.42 342.23l9.46 1.25 82.4-26.37-27.1-6.05-64.76 31.17z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+            <path class="divider-fill" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+            <path class="divider-fill" d="M288.42 342.23L0 304.17V355h385.18l-87.3-11.52-9.46-1.25z"/>
+         </svg></div>
+      <div id="skills-divider-bottom">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 355" preserveAspectRatio="none">
+            <path fill="none" d="M999.45 0H0v165.72l379.95 132.46L999.45 0z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M379.95 298.18l28.47 9.92L1000 118.75V0h-.55l-619.5 298.18zM492.04 337.25L1000 252.63V118.75L408.42 308.1l83.62 29.15z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M492.04 337.25L1000 252.63V118.75L408.42 308.1l83.62 29.15z"/>
+            <path class="divider-fill" d="M530.01 350.49l20.22 4.51H1000V252.63l-507.96 84.62 37.97 13.24z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l20.22 4.51H1000V252.63l-507.96 84.62 37.97 13.24z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l20.22 4.51H1000V252.63l-507.96 84.62 37.97 13.24z"/>
+            <path class="divider-fill" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M379.95 298.18L0 165.72v66.59l353.18 78.75 26.77-12.88z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M353.18 311.06L0 232.31v71.86l288.42 38.06 64.76-31.17z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M353.18 311.06L0 232.31v71.86l288.42 38.06 64.76-31.17z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M380.28 317.11l28.14-9.01-28.47-9.92-26.77 12.88 27.1 6.05z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M380.28 317.11l28.14-9.01-28.47-9.92-26.77 12.88 27.1 6.05z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M479.79 339.29l12.25-2.04-83.62-29.15-28.14 9.01 99.51 22.18z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M479.79 339.29l12.25-2.04-83.62-29.15-28.14 9.01 99.51 22.18z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M479.79 339.29l12.25-2.04-83.62-29.15-28.14 9.01 99.51 22.18z"/>
+            <path class="divider-fill" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2zM288.42 342.23l9.46 1.25 82.4-26.37-27.1-6.05-64.76 31.17z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M288.42 342.23l9.46 1.25 82.4-26.37-27.1-6.05-64.76 31.17z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M288.42 342.23l9.46 1.25 82.4-26.37-27.1-6.05-64.76 31.17z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+            <path class="divider-fill" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+            <path class="divider-fill" style="opacity:0.5" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+            <path class="divider-fill" style="opacity:0.3" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+            <path class="divider-fill" d="M288.42 342.23L0 304.17V355h385.18l-87.3-11.52-9.46-1.25z"/>
+         </svg></div>
+      <div id="skills">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_skillsText">
+                     <p style="margin:6.67px 0 6.67px 0;font-size:24px;font-weight:bold;">À propos de DUN</p>
+                     <p style="font-size:16px;">L’alliance de l’expérience terrain et de la rigueur opérationnelle.</p>
+                     <p style="font-size:16px;">&nbsp;</p>
+                     <p style="font-size:16px;">La DUN Sàrl est une entreprise à visage humain qui puise sa force naissante dans un héritage de savoir-faire solide. </p>
+                     <p style="font-size:16px;">Bien que notre structure soit récente, elle est portée par une équipe et une direction qui partagent une vision commune : l’excellence dans l'exécution des travaux de construction au Grand-Duché.</p>
+                     <p style="font-size:16px;">&nbsp;</p>
+                     <p style="font-size:16px;">Une expertise métier confirmée </p>
+                     <p style="font-size:16px;">&nbsp;</p>
+                     <p style="font-size:16px;">Notre capital le plus précieux est l’expérience accumulée par nos collaborateurs et notre administration. </p>
+                     <p style="font-size:16px;">Nous comptons des décennies de pratique sur le terrain, couvrant une vaste gamme de techniques constructives, du gros œuvre aux interventions plus spécialisées. </p>
+                     <p style="font-size:16px;">Cette maîtrise nous permet d'aborder chaque projet avec une compréhension technique profonde et une capacité d'adaptation éprouvée.</p>
+                     <p style="font-size:16px;">&nbsp;</p>
+                     <p style="font-size:16px;">La sécurité au cœur de notre gestion </p>
+                     <p style="font-size:16px;">&nbsp;</p>
+                     <p style="font-size:16px;">La sécurité et la santé sur le lieu de travail ne sont pas de vaines promesses, mais une exigence quotidienne. Nous garantisons à nos partenaires une gestion rigoureuse des risques, une conformité totale avec les régulations de l'ITM et une application stricte des normes de sécurité.</p>
+                     <p style="font-size:16px;">&nbsp;</p>
+                     <p style="font-size:16px;font-weight:bold;"><span style="font-weight:normal;">En choisissant la DUN Sàrl, vous optez pour un partenaire qui allie la souplesse d'une structure réactive à la sérénité d'une gestion administrative et sécuritaire exemplaire.</span></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_services">
+      <div id="services">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_servicesHeading" style="display:block;width:100%;z-index:4;">
+                     <h1 id="servicesHeading">SERVICES</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:41;">
+      <div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:5;">
+         <a href="#intro"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+   </div>
+   <div id="wb_servicesLayoutGrid1">
+      <div id="servicesLayoutGrid1">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_servicesCard1" style="display:flex;width:100%;z-index:6;" class="card h1" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
+                     <div id="servicesCard1-card-body">
+                        <div id="servicesCard1-card-item0"><i class="fa fa-fire-extinguisher"></i></div>
+                        <div id="servicesCard1-card-item1">SÉCURITÉ</div>
+                        <div id="servicesCard1-card-item2">La sécurité est notre priorité absolue. Avec un Travailleur Désigné (Classe C), nous veillons personnellement à l'application stricte des normes AAA et ITM sur chaque chantier pour protéger nos équipes et vos projets.</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-2">
+               <div class="col-2-padding">
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="col-3-padding">
+                  <div id="wb_servicesCard3" style="display:flex;width:100%;z-index:7;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
+                     <div id="servicesCard3-card-body">
+                        <div id="servicesCard3-card-item0"><i class="fa fa-handshake-o"></i></div>
+                        <div id="servicesCard3-card-item1">COMPLIANCE</div>
+                        <div id="servicesCard3-card-item2">Nous garantissons une transparence totale et une rigueur exemplaire dans nos obligations fiscales et sociales. DUN s'engage au strict respect des paiements de TVA, impôts e cotisations sociales, assurant à nos partenaires une collaboration sécurisée et parfaitement conforme à la législation luxembourgeoise.</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_servicesLayoutGrid2">
+      <div id="servicesLayoutGrid2">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_servicesCard4" style="display:flex;width:100%;z-index:8;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
+                     <div id="servicesCard4-card-body">
+                        <div id="servicesCard4-card-item0"><i class="fa fa-history"></i></div>
+                        <div id="servicesCard4-card-item1">DISPONIBILITÉ</div>
+                        <div id="servicesCard4-card-item2">Nous comprenons les impératifs du secteur de la construction. Notre structure est organisée pour offrir une réactivité maximale, vous permettant de mobiliser des ressources qualifiées dès que vos besoins l'exigent.</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-2">
+               <div class="col-2-padding">
+                  <div id="wb_servicesCard5" style="display:flex;width:100%;z-index:9;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
+                     <div id="servicesCard5-card-body">
+                        <div id="servicesCard5-card-item0"><i class="fa fa-users"></i></div>
+                        <div id="servicesCard5-card-item1">MAIN D'OEUVRE QUALIFIÉE</div>
+                        <div id="servicesCard5-card-item2">Nos équipes sont composées de professionnels expérimentés, des maçons aux chefs d'équipe. Ce savoir-faire technique cumulé nous permet de réaliser vos projets de gros œuvre avec une précision et une qualité irréprochables.</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="col-3-padding">
+                  <div id="wb_servicesCard6" style="display:flex;width:100%;z-index:10;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
+                     <div id="servicesCard6-card-body">
+                        <div id="servicesCard6-card-item0"><i class="fa fa-truck"></i></div>
+                        <div id="servicesCard6-card-item1">LOGISTIQUE</div>
+                        <div id="servicesCard6-card-item2">Grâce à notre logistique autonome, nous gérons intégralement le transport et l'hébergement de nos ouvriers. Vous bénéficiez d'une force de travail opérationnelle immédiatement, sans contrainte logistique pour votre entreprise.</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_portfolio">
+      <div id="portfolio">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_contact">
+      <div id="contact-overlay"></div>
+      <div id="contact">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <div id="wb_contactForm">
+                     <div id="contactForm">
+                        <div class="row">
+                           <div class="col-1">
+                              <div class="col-1-padding">
+                                 <div id="wb_contactText1">
+                                    <p style="margin:6.67px 0 6.67px 0;font-size:16px;line-height:18px;font-weight:bold;"><span style="font-size:24px;line-height:27.5px;">Envoyer un message</span></p>
+                                 </div>
+                                 <input type="text" id="contactName" style="display:block;width:100%;height:42px;z-index:12;" name="name" value="" spellcheck="false" placeholder="Nom">
+                                 <input type="text" id="contactEmail" style="display:block;width:100%;height:42px;z-index:13;" name="email" value="" spellcheck="false" placeholder="Email">
+                                 <input type="text" id="contactSubject" style="display:block;width:100%;height:42px;z-index:14;" name="subject" value="" spellcheck="false" placeholder="Objet">
+                                 <textarea name="message" id="contactMessage" style="display:block;width:100%;;height:108px;z-index:15;" rows="4" cols="35" autocomplete="off" spellcheck="false" placeholder="Message"></textarea>
+                                 <input type="submit" id="contactButton" name="" value="Envoyer" style="display:inline-block;width:128px;height:39px;z-index:16;">
+                              </div>
+                           </div>
+                           <div class="col-2">
+                              <div class="col-2-padding">
+                                 <div id="wb_contactText2">
+                                    <p style="margin:6.67px 0 6.67px 0;font-size:24px;font-weight:bold;">Contactez-nous</p>
+                                    <p style="font-size:16px;">Une question ou un projet de construction ? </p>
+                                    <p style="font-size:16px;">Notre équipe est à votre écoute.</p>
+                                    <p style="font-size:16px;">&nbsp;</p>
+                                    <p style="font-size:16px;">Que vous ayez besoin d'une main-d'œuvre qualifiée en renfort ou d'une gestion complète de la partie opérationnelle de votre chantier, nous sommes prêts à intervenir. Remplissez le formulaire ci-contre ou contactez-nous directement par téléphone ou e-mail. Nous vous répondrons dans les plus brefs délais pour analyser vos besoins et vous proposer une solution adaptée.</p>
+                                 </div>
+                                 <div id="wb_Image2" style="display:block;width:100%;height:auto;text-align:center;z-index:18;">
+                                    <img src="images/Logo DUN simples-01.png" id="Image2" alt="" width="395" height="145">
+                                 </div>
+                                 <div id="wb_Text1">
+                                    <span style="color:#4E4E4E;font-family:Arial;font-size:8px;"><br></span><span style="color:#4E4E4E;font-family:Arial;font-size:16px;">6 Route de Tr&#0232;ves<br>L-2869 Senningerberg <br>Luxembourg <br><br>E-mail : info@dun.pt</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_footer">
+      <div id="footer">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_contactText3">
+                  <p>Copyright © 2026&nbsp;DUN Sàrl.&nbsp; All Rights Reserved</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="cookiePopup" class="modal fade" data-bs-keyboard="true" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+               <div class="modal-title"></div>
+            </div>
+            <div class="modal-body">
+               <div id="wb_cookieHeading" style="display:block;width:100%;z-index:31;">
+                  <h2 id="cookieHeading">This website uses cookies to ensure you get the best experience on our website. </h2>
+               </div>
+               <input type="submit" id="cookieButton" onclick="$('#cookiePopup').modal('hide');return false;" name="" value="Got it!" style="display:inline-block;width:111px;height:35px;z-index:32;cursor:pointer;" tabindex="1" autofocus>
+               <hr id="spacer-line" style="display:block;width:100%;z-index:33;">
+               <div id="wb_cookieCheckBox" style="display:inline-block;width:16px;height:13px;z-index:34;">
+                  <input type="checkbox" id="cookieCheckBox" name="donotshow" value="on" style="display:inline-block;" tabindex="2"><label for="cookieCheckBox"></label>
+               </div>
+               <label for="cookieButton" id="newsLetterLabel" style="display:inline-block;width:204px;line-height:21px;z-index:35;">Don’t show this popup again</label>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
