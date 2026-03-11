@@ -88,6 +88,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
 <title>DUN</title>
 <meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Asset 1.png" rel="icon" sizes="89x89" type="image/png">
+<link href="Asset 1.png" rel="icon" sizes="89x89" type="image/png">
+<link href="Asset 1.png" rel="icon" sizes="89x89" type="image/png">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/DUNsite.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
@@ -228,11 +231,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
          <div class="row">
             <div class="col-1">
                <div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:0;">
-                  <a href="./index.html#intro"><img src="images/Logo DUN 3.png" id="Image1" alt=""></a>
+                  <a href="./index.html#intro"><img src="images/Logo DUN 3.png" id="Image1" alt="" width="293" height="100"></a>
+               </div>
+               <div id="wb_Image3" style="display:block;width:100%;height:auto;text-align:center;z-index:1;">
+                  <img src="images/LogoDUN.png" id="Image3" alt="">
                </div>
             </div>
             <div class="col-2">
-               <div id="wb_aboutMeMenu" style="display:block;width:100%;z-index:1;">
+               <div id="wb_aboutMeMenu" style="display:block;width:100%;z-index:2;">
                   <ul id="aboutMeMenu" role="menubar" class="nav">
                      <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="#intro" target="_self">accueil</a>
                      </li>
@@ -404,7 +410,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
          <div class="row">
             <div class="col-1">
                <div class="col-1-padding">
-                  <div id="wb_servicesHeading" style="display:block;width:100%;z-index:4;">
+                  <div id="wb_servicesHeading" style="display:block;width:100%;z-index:5;">
                      <h1 id="servicesHeading">SERVICES</h1>
                   </div>
                </div>
@@ -412,8 +418,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
          </div>
       </div>
    </div>
-   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:41;">
-      <div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:5;">
+   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:42;">
+      <div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:6;">
          <a href="#intro"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
    </div>
    <div id="wb_servicesLayoutGrid1">
@@ -421,7 +427,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
          <div class="row">
             <div class="col-1">
                <div class="col-1-padding">
-                  <div id="wb_servicesCard1" style="display:flex;width:100%;z-index:6;" class="card h1" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
+                  <div id="wb_servicesCard1" style="display:flex;width:100%;z-index:7;" class="card h1" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
                      <div id="servicesCard1-card-body">
                         <div id="servicesCard1-card-item0"><i class="fa fa-fire-extinguisher"></i></div>
                         <div id="servicesCard1-card-item1">SÉCURITÉ</div>
@@ -436,7 +442,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
             </div>
             <div class="col-3">
                <div class="col-3-padding">
-                  <div id="wb_servicesCard3" style="display:flex;width:100%;z-index:7;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
+                  <div id="wb_servicesCard3" style="display:flex;width:100%;z-index:8;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
                      <div id="servicesCard3-card-body">
                         <div id="servicesCard3-card-item0"><i class="fa fa-handshake-o"></i></div>
                         <div id="servicesCard3-card-item1">COMPLIANCE</div>
@@ -453,7 +459,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
          <div class="row">
             <div class="col-1">
                <div class="col-1-padding">
-                  <div id="wb_servicesCard4" style="display:flex;width:100%;z-index:8;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
+                  <div id="wb_servicesCard4" style="display:flex;width:100%;z-index:9;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
                      <div id="servicesCard4-card-body">
                         <div id="servicesCard4-card-item0"><i class="fa fa-history"></i></div>
                         <div id="servicesCard4-card-item1">DISPONIBILITÉ</div>
@@ -464,7 +470,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
             </div>
             <div class="col-2">
                <div class="col-2-padding">
-                  <div id="wb_servicesCard5" style="display:flex;width:100%;z-index:9;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
+                  <div id="wb_servicesCard5" style="display:flex;width:100%;z-index:10;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
                      <div id="servicesCard5-card-body">
                         <div id="servicesCard5-card-item0"><i class="fa fa-users"></i></div>
                         <div id="servicesCard5-card-item1">MAIN D'OEUVRE QUALIFIÉE</div>
@@ -475,7 +481,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
             </div>
             <div class="col-3">
                <div class="col-3-padding">
-                  <div id="wb_servicesCard6" style="display:flex;width:100%;z-index:10;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
+                  <div id="wb_servicesCard6" style="display:flex;width:100%;z-index:11;" class="card" data-100-bottom="opacity:0.0;" data--500-bottom="opacity:1.0;">
                      <div id="servicesCard6-card-body">
                         <div id="servicesCard6-card-item0"><i class="fa fa-truck"></i></div>
                         <div id="servicesCard6-card-item1">LOGISTIQUE</div>
@@ -512,11 +518,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
                                  <div id="wb_contactText1">
                                     <p style="margin:6.67px 0 6.67px 0;font-size:16px;line-height:18px;font-weight:bold;"><span style="font-size:24px;line-height:27.5px;">Envoyer un message</span></p>
                                  </div>
-                                 <input type="text" id="contactName" style="display:block;width:100%;height:42px;z-index:12;" name="name" value="" spellcheck="false" placeholder="Nom">
-                                 <input type="text" id="contactEmail" style="display:block;width:100%;height:42px;z-index:13;" name="email" value="" spellcheck="false" placeholder="Email">
-                                 <input type="text" id="contactSubject" style="display:block;width:100%;height:42px;z-index:14;" name="subject" value="" spellcheck="false" placeholder="Objet">
-                                 <textarea name="message" id="contactMessage" style="display:block;width:100%;;height:108px;z-index:15;" rows="4" cols="35" autocomplete="off" spellcheck="false" placeholder="Message"></textarea>
-                                 <input type="submit" id="contactButton" name="" value="Envoyer" style="display:inline-block;width:128px;height:39px;z-index:16;">
+                                 <input type="text" id="contactName" style="display:block;width:100%;height:42px;z-index:13;" name="name" value="" spellcheck="false" placeholder="Nom">
+                                 <input type="text" id="contactEmail" style="display:block;width:100%;height:42px;z-index:14;" name="email" value="" spellcheck="false" placeholder="Email">
+                                 <input type="text" id="contactSubject" style="display:block;width:100%;height:42px;z-index:15;" name="subject" value="" spellcheck="false" placeholder="Objet">
+                                 <textarea name="message" id="contactMessage" style="display:block;width:100%;;height:108px;z-index:16;" rows="4" cols="35" autocomplete="off" spellcheck="false" placeholder="Message"></textarea>
+                                 <input type="submit" id="contactButton" name="" value="Envoyer" style="display:inline-block;width:128px;height:39px;z-index:17;">
                               </div>
                            </div>
                            <div class="col-2">
@@ -528,8 +534,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
                                     <p style="font-size:16px;">&nbsp;</p>
                                     <p style="font-size:16px;">Que vous ayez besoin d'une main-d'œuvre qualifiée en renfort ou d'une gestion complète de la partie opérationnelle de votre chantier, nous sommes prêts à intervenir. Remplissez le formulaire ci-contre ou contactez-nous directement par téléphone ou e-mail. Nous vous répondrons dans les plus brefs délais pour analyser vos besoins et vous proposer une solution adaptée.</p>
                                  </div>
-                                 <div id="wb_Image2" style="display:block;width:100%;height:auto;text-align:center;z-index:18;">
-                                    <img src="images/Logo DUN simples-01.png" id="Image2" alt="">
+                                 <div id="wb_Image2" style="display:block;width:100%;height:auto;text-align:center;z-index:19;">
+                                    <img src="images/Logo DUN simples-01.png" id="Image2" alt="" width="395" height="145">
                                  </div>
                                  <div id="wb_Text1">
                                     <span style="color:#4E4E4E;font-family:Arial;font-size:8px;"><br></span><span style="color:#4E4E4E;font-family:Arial;font-size:16px;">6D Route de Tr&#0232;ves<br>L-2869 Senningerberg <br>Luxembourg <br><br>info@dun.pt<br>621 150 429</span>
@@ -563,25 +569,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
                <div class="modal-title"></div>
             </div>
             <div class="modal-body">
-               <div id="wb_cookieHeading" style="display:block;width:100%;z-index:31;">
+               <div id="wb_cookieHeading" style="display:block;width:100%;z-index:32;">
                   <h2 id="cookieHeading">This website uses cookies to ensure you get the best experience on our website. </h2>
                </div>
-               <input type="submit" id="cookieButton" onclick="$('#cookiePopup').modal('hide');return false;" name="" value="Got it!" style="display:inline-block;width:111px;height:35px;z-index:32;cursor:pointer;" tabindex="1" autofocus>
-               <hr id="spacer-line" style="display:block;width:100%;z-index:33;">
-               <div id="wb_cookieCheckBox" style="display:inline-block;width:16px;height:13px;z-index:34;">
+               <input type="submit" id="cookieButton" onclick="$('#cookiePopup').modal('hide');return false;" name="" value="Got it!" style="display:inline-block;width:111px;height:35px;z-index:33;cursor:pointer;" tabindex="1" autofocus>
+               <hr id="spacer-line" style="display:block;width:100%;z-index:34;">
+               <div id="wb_cookieCheckBox" style="display:inline-block;width:16px;height:13px;z-index:35;">
                   <input type="checkbox" id="cookieCheckBox" name="donotshow" value="on" style="display:inline-block;" tabindex="2"><label for="cookieCheckBox"></label>
                </div>
-               <label for="cookieButton" id="newsLetterLabel" style="display:inline-block;width:204px;line-height:21px;z-index:35;">Don’t show this popup again</label>
+               <label for="cookieButton" id="newsLetterLabel" style="display:inline-block;width:204px;line-height:21px;z-index:36;">Don’t show this popup again</label>
             </div>
          </div>
       </div>
-   </div>
-<<<<<<< HEAD
-   <div id="wb_Image4" style="position:absolute;left:7px;top:1px;width:189px;height:63px;text-align:center;z-index:48;">
-=======
-   <div id="wb_Image4" style="position:absolute;left:7px;top:1px;width:189px;height:63px;text-align:center;z-index:49;">
->>>>>>> 6075b4e98d0c6020f7b7c2d3f6624dc8fc15fa1b
-      <img src="images/LogoDUN.png" id="Image4" alt="" width="189" height="64">
    </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 body
 {
    background-color: #000000;
-   background-image: url('../images/Fundo betão DUN.jpg');
+   background-image: url('../images/FundoDUN.jpg');
    background-attachment: fixed;
    background-position: center center;
    background-repeat: no-repeat;
@@ -167,33 +167,6 @@ body
    max-width: 100% !important;
 }
 }
-#intro-divider-top
-{
-   overflow: hidden;
-   position: absolute;
-   top: 0%;
-   width: 100%;
-   height: 50px;
-   line-height: 0;
-   left: 0;
-   transform: scaleX(-1.0);
-}
-#intro-divider-top svg
-{
-   display: block;
-   width: 100%;
-   height: 100%;
-   position: relative;
-   left: 50%;
-   top: 0;
-   transform: translateX(-50%);
-}
-#intro-divider-top .divider-fill
-{
-   fill: rgba(0,0,0,1.00);
-   transform-origin: bottom;
-   transform: rotateY(0deg);
-}
 #intro-divider-bottom
 {
    overflow: hidden;
@@ -203,7 +176,7 @@ body
    left: 0;
    width: 100%;
    height: 50px;
-   transform: scaleY(-1.01);
+   transform: scaleX(-1.0);
 }
 #intro-divider-bottom svg
 {
@@ -428,8 +401,7 @@ body
 }
 #wb_homeText 
 {
-   background-color: transparent;
-   background-image: none;
+   background-image: radial-gradient(circle, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.00) 100%);
    border: 0px solid #000000;
    border-radius: 0px;
    padding: 75px 50px 75px 50px;
@@ -438,7 +410,7 @@ body
 }
 #wb_homeText
 {
-   color: #FFFFFF;
+   color: #000000;
    font-family: Arial;
    font-weight: bold;
    font-size: 21px;
@@ -515,7 +487,7 @@ body
    border-radius: 0px;
    background-color: transparent;
    margin: 0;
-   text-align: right;
+   text-align: center;
    position: relative;
    z-index: 1111 !important;
 }
@@ -559,7 +531,7 @@ body
    line-height: 28px;
    padding: 0px 10px 0px 10px;
 }
-#wb_aboutMeMenu li:hover a, #wb_aboutMeMenu a:hover, #wb_aboutMeMenu .active
+#wb_aboutMeMenu li:hover a, #wb_aboutMeMenu a:hover
 {
    color: #000000;
    border: 0px solid #BF1F66;
@@ -580,11 +552,6 @@ body
    font-size: 1px;
    height: 0;
    line-height: 0;
-}
-#wb_aboutMeMenu.affix
-{
-   top: 0 !important;
-   position: fixed !important;
 }
 @media all and (max-width:320px) 
 {
@@ -2054,7 +2021,7 @@ body
    margin-right: auto;
    vertical-align: top;
 }
-#wb_skillsText 
+#wb_aPropos 
 {
    background-color: transparent;
    background-image: none;
@@ -2064,7 +2031,7 @@ body
    margin: 0;
    text-align: left;
 }
-#wb_skillsText
+#wb_aPropos
 {
    color: #FFFFFF;
    font-family: Arial;
@@ -2072,12 +2039,12 @@ body
    font-size: 19px;
    line-height: 21px;
 }
-#wb_skillsText p, #wb_skillsText ul
+#wb_aPropos p, #wb_aPropos ul
 {
    margin: 0;
    padding: 0;
 }
-#wb_skillsText
+#wb_aPropos
 {
    display: block;
    margin: 0;
@@ -2120,6 +2087,25 @@ body
    width: 100%;
    height: auto;
    max-width: 123px;
+   margin-left: 0;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Image3
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image3
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 234px;
    margin-left: 0;
    margin-right: auto;
    vertical-align: top;
