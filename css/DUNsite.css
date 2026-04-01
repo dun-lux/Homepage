@@ -8,6 +8,31 @@
    0% { transform: translate(0px,100px) rotate(0deg) ; opacity: 0;  }
    100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
 }
+@keyframes animate-fade-out
+{
+   0% { opacity: 1;  }
+   100% { opacity: 0;  }
+}
+a.style1
+{
+   color: #F5F5F5;
+   text-decoration: underline;
+}
+a.style1:visited
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+a.style1:active
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+a.style1:hover
+{
+   color: #F2C119;
+   text-decoration: underline;
+}
 h1, .h1
 {
    font-family: Arial;
