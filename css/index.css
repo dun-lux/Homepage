@@ -102,7 +102,7 @@ body
    width: 100% !important;
 }
 }
-#wb_intro
+#wb_accueil
 {
    clear: both;
    position: relative;
@@ -118,7 +118,7 @@ body
    box-sizing: border-box;
    margin: 0;
 }
-#intro
+#accueil
 {
    box-sizing: border-box;
    height: 100vh;
@@ -130,7 +130,7 @@ body
    margin-left: auto;
    max-width: 1140px;
 }
-#intro > .col-1
+#accueil > .col-1
 {
    box-sizing: border-box;
    font-size: 0;
@@ -139,11 +139,11 @@ body
    padding-left: 15px;
    position: relative;
 }
-#intro > .col-1
+#accueil > .col-1
 {
    flex: 0 0 auto;
 }
-#intro > .col-1
+#accueil > .col-1
 {
    background-color: transparent;
    background-image: none;
@@ -159,7 +159,7 @@ body
    justify-content: center;
    text-align: center;
 }
-#intro > .col-1 > .col-1-padding
+#accueil > .col-1 > .col-1-padding
 {
    box-sizing: border-box;
    width: 100%;
@@ -167,13 +167,13 @@ body
 }
 @media (max-width: 480px)
 {
-#intro > .col-1
+#accueil > .col-1
 {
    flex-basis: 100% !important;
    max-width: 100% !important;
 }
 }
-#intro-divider-bottom
+#accueil-divider-bottom
 {
    overflow: hidden;
    position: absolute;
@@ -184,7 +184,7 @@ body
    height: 50px;
    transform: scaleX(-1.0);
 }
-#intro-divider-bottom svg
+#accueil-divider-bottom svg
 {
    display: block;
    width: 100%;
@@ -193,7 +193,7 @@ body
    left: 50%;
    transform: translateX(-50%);
 }
-#intro-divider-bottom .divider-fill
+#accueil-divider-bottom .divider-fill
 {
    fill: rgba(0,0,0,0.60);
    transform-origin: bottom;
@@ -2043,25 +2043,6 @@ body
    height: auto;
 }
 }
-#wb_Image1
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Image1
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   box-sizing: border-box;
-   padding: 0;
-   display: block;
-   width: 100%;
-   height: auto;
-   max-width: 206px;
-   margin-left: auto;
-   margin-right: auto;
-   vertical-align: top;
-}
 #wb_Image2
 {
    margin: 0;
@@ -2122,4 +2103,20 @@ body
    font-weight: 600;
    font-style: normal;
    font-size: 21px;
+}
+#wb_Image1
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: inline-block;
+   width: 193px;
+   height: 65px;
+   vertical-align: top;
 }
