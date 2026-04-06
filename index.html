@@ -14,6 +14,7 @@
 <link href="css/index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
 <script src="jquery.ui.effect.min.js"></script>
+<script src="wb.stickylayer.min.js"></script>
 <script src="skrollr.min.js"></script>
 <script src="popper.min.js"></script>
 <script src="bootstrap.min.js"></script>
@@ -78,6 +79,7 @@
       {
          onScrollservices();
       });
+      $("#upStickyLayer").stickylayer({orientation: 3, position: [25, 25], delay: 200});
       $("a[href*='#servicesLayoutGrid2']").click(function(event)
       {
          event.preventDefault();
@@ -247,6 +249,7 @@
          event.preventDefault();
          $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top-88 }, 600, 'easeOutCirc');
       });
+      $("#Layer1").stickylayer({orientation: 3, position: [25, 100], delay: 250});
    });
 </script>
 <script>   
@@ -270,12 +273,15 @@
       <div id="header">
          <div class="row">
             <div class="col-1">
-               <div id="wb_Image1" style="display:inline-block;width:193px;height:65px;text-align:center;z-index:0;">
+               <div id="wb_Image3" style="display:block;width:100%;height:auto;text-align:center;z-index:0;">
+                  <img src="images/LogoDUN.png" id="Image3" alt="">
+               </div>
+               <div id="wb_Image1" style="display:inline-block;width:193px;height:65px;text-align:center;z-index:1;">
                   <a href="#accueil"><img src="images/Logo DUN 3.png" id="Image1" alt="" width="193" height="66"></a>
                </div>
             </div>
             <div class="col-2">
-               <div id="wb_aboutMeMenu" style="display:block;width:100%;z-index:1;">
+               <div id="wb_aboutMeMenu" style="display:block;width:100%;z-index:2;">
                   <ul id="aboutMeMenu" role="menubar" class="nav">
                      <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="#accueil" target="_self">accueil</a>
                      </li>
@@ -332,7 +338,7 @@
       <div id="accueil">
          <div class="col-1">
             <div class="col-1-padding">
-               <div id="wb_Card1" style="display:flex;width:100%;z-index:2;" class="card">
+               <div id="wb_Card1" style="display:flex;width:100%;z-index:3;" class="card">
                   <div id="Card1-card-body">
                      <div id="Card1-card-item0">Enduring Foundations: </div>
                      <div id="Card1-card-item1">Votre partenaire de confiance pour soutenir la dynamique de vos chantiers.</div>
@@ -556,13 +562,13 @@
          <div class="row">
             <div class="col-1">
                <div class="col-1-padding">
-                  <div id="wb_servicesHeading" style="display:block;width:100%;z-index:10;">
+                  <div id="wb_servicesHeading" style="display:block;width:100%;z-index:11;">
                      <h1 id="servicesHeading">NOTRE VALEUR AJOUTÉE</h1>
                   </div>
                   <div id="wb_LayoutGrid1">
                      <div id="LayoutGrid1">
                         <div class="col-1">
-                           <div id="wb_servicesCard1" style="display:flex;width:100%;z-index:4;" class="card">
+                           <div id="wb_servicesCard1" style="display:flex;width:100%;z-index:5;" class="card">
                               <div id="servicesCard1-card-body">
                                  <div id="servicesCard1-card-item0"><i class="fa fa-gears"></i></div>
                                  <div id="servicesCard1-card-item1">EXCELLENCE<br>OPÉRATIONNELLE</div>
@@ -571,7 +577,7 @@
                            </div>
                         </div>
                         <div class="col-2">
-                           <div id="wb_servicesCard2" style="display:flex;width:100%;z-index:5;" class="card">
+                           <div id="wb_servicesCard2" style="display:flex;width:100%;z-index:6;" class="card">
                               <div id="servicesCard2-card-body">
                                  <div id="servicesCard2-card-item0"><i class="fa fa-certificate"></i></div>
                                  <div id="servicesCard2-card-item1">COMPÉTENCES ET CERTIFICATIONS</div>
@@ -580,7 +586,7 @@
                            </div>
                         </div>
                         <div class="col-3">
-                           <div id="wb_servicesCard4" style="display:flex;width:100%;z-index:6;" class="card">
+                           <div id="wb_servicesCard4" style="display:flex;width:100%;z-index:7;" class="card">
                               <div id="servicesCard4-card-body">
                                  <div id="servicesCard4-card-item0"><i class="fa fa-home"></i></div>
                                  <div id="servicesCard4-card-item1">GESTION HUMAINE<br>& LOGEMENT</div>
@@ -594,7 +600,7 @@
                      <div id="servicesLayoutGrid2">
                         <div class="col-1">
                            <div class="col-1-padding">
-                              <div id="wb_servicesCard3" style="display:flex;width:100%;z-index:7;" class="card">
+                              <div id="wb_servicesCard3" style="display:flex;width:100%;z-index:8;" class="card">
                                  <div id="servicesCard3-card-body">
                                     <div id="servicesCard3-card-item0"><i class="fa fa-shield"></i></div>
                                     <div id="servicesCard3-card-item1">RIGUEUR ET <br>PRÉVENTION</div>
@@ -605,7 +611,7 @@
                         </div>
                         <div class="col-2">
                            <div class="col-2-padding">
-                              <div id="wb_servicesCard5" style="display:flex;width:100%;z-index:8;" class="card">
+                              <div id="wb_servicesCard5" style="display:flex;width:100%;z-index:9;" class="card">
                                  <div id="servicesCard5-card-body">
                                     <div id="servicesCard5-card-item0"><i class="fa fa-balance-scale"></i></div>
                                     <div id="servicesCard5-card-item1">SÉRÉNITÉ JURIDIQUE</div>
@@ -616,7 +622,7 @@
                         </div>
                         <div class="col-3">
                            <div class="col-3-padding">
-                              <div id="wb_servicesCard6" style="display:flex;width:100%;z-index:9;" class="card">
+                              <div id="wb_servicesCard6" style="display:flex;width:100%;z-index:10;" class="card">
                                  <div id="servicesCard6-card-body">
                                     <div id="servicesCard6-card-item0"><i class="fa fa-hourglass-start"></i></div>
                                     <div id="servicesCard6-card-item1">AGILITÉ ET SUPPORT</div>
@@ -632,9 +638,9 @@
          </div>
       </div>
    </div>
-   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:38;">
-      <div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:13;">
-         <a href="#intro"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+   <div id="upStickyLayer" style="position:absolute;text-align:left;left:1006px;top:491px;width:50px;height:50px;z-index:40;">
+      <div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:14;">
+         <a href="#accueil"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
    </div>
    <div id="wb_contact">
       <div id="contact-overlay"></div>
@@ -735,7 +741,7 @@
                                  <div id="wb_Text1">
                                     <span style="color:#4E4E4E;font-family:Arial;font-size:8px;"><br></span><span style="color:#4E4E4E;font-family:Arial;font-size:16px;">6D Route de Tr&#0232;ves<br>L-2869 Senningerberg <br>Luxembourg <br><br>info@dun.lu<br><br>+352 621 150 429<br></span>
                                  </div>
-                                 <div id="wb_Image2" style="display:block;width:100%;height:auto;text-align:center;z-index:19;">
+                                 <div id="wb_Image2" style="display:block;width:100%;height:auto;text-align:center;z-index:20;">
                                     <img src="images/Logo DUN 3.png" id="Image2" alt="" width="243" height="83">
                                  </div>
                               </div>
@@ -767,17 +773,23 @@
                <div class="modal-title"></div>
             </div>
             <div class="modal-body">
-               <div id="wb_cookieHeading" style="display:block;width:100%;z-index:25;">
+               <div id="wb_cookieHeading" style="display:block;width:100%;z-index:26;">
                   <h2 id="cookieHeading">This website uses cookies to ensure you get the best experience on our website. </h2>
                </div>
-               <input type="submit" id="cookieButton" onclick="$('#cookiePopup').modal('hide');return false;" name="" value="Got it!" style="display:inline-block;width:111px;height:35px;z-index:26;cursor:pointer;" tabindex="1" autofocus>
-               <hr id="spacer-line" style="display:block;width:100%;z-index:27;">
-               <div id="wb_cookieCheckBox" style="display:inline-block;width:16px;height:13px;z-index:28;">
+               <input type="submit" id="cookieButton" onclick="$('#cookiePopup').modal('hide');return false;" name="" value="Got it!" style="display:inline-block;width:111px;height:35px;z-index:27;cursor:pointer;" tabindex="1" autofocus>
+               <hr id="spacer-line" style="display:block;width:100%;z-index:28;">
+               <div id="wb_cookieCheckBox" style="display:inline-block;width:16px;height:13px;z-index:29;">
                   <input type="checkbox" id="cookieCheckBox" name="donotshow" value="on" style="display:inline-block;" tabindex="2"><label for="cookieCheckBox"></label>
                </div>
-               <label for="cookieButton" id="newsLetterLabel" style="display:inline-block;width:204px;line-height:21px;z-index:29;">Don’t show this popup again</label>
+               <label for="cookieButton" id="newsLetterLabel" style="display:inline-block;width:204px;line-height:21px;z-index:30;">Don’t show this popup again</label>
             </div>
          </div>
+      </div>
+   </div>
+   <div id="Layer1" style="position:absolute;text-align:right;left:1006px;top:418px;width:50px;height:52px;z-index:44;">
+      <div id="Layer1_Container" style="width:50px;position:relative;margin-left:auto;margin-right:0;text-align:left;">
+         <div id="wb_Icon1" style="position:absolute;left:3px;top:4px;width:37px;height:37px;text-align:center;z-index:35;">
+            <a href="https://www.linkedin.com/company/dun-sàrl/?viewAsMember=true" target="_blank" title="Linkedin"><div id="Icon1"><i class="fa fa-linkedin-square"></i></div></a></div>
       </div>
    </div>
 </body>
